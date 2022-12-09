@@ -2,7 +2,7 @@
 
 /**
  * main - print the alphabets in reverve
- * Retun: Always 0
+ * Return: Always 0
  */
 int main(void)
 {
