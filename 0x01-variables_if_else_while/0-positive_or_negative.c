@@ -18,7 +18,7 @@ int main(void)
 	}
 	else if (n == 0)
 	{
-		printf("%D is zerp\n", n);
+		printf("%d is zero\n", n);
 	}
 	else
 	{
