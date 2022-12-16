@@ -27,6 +27,6 @@ printf("%s ", b);
 else
 printf("%d ", i);
 }
-printf('\n');
+printf("\n");
 return (0);
 }
