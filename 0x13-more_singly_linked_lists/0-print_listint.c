@@ -1,22 +1,19 @@
 #include "lists.h"
 /**
- * pop_listint - deletes the head node of a linked list.
- * @head: pointer to the first node of the linked list
- * Return: the data inside the elements that was deleted,
- * or 0 if the list is empty
+ * print_listint - prints all the elements of a linked list
+ * @h: pointer to the 1st node of the linked list
+ * Return: number of nodes
  */
-int pop_listint(listint_t **head)
+size_t print_listint(const listint_t *h)
 {
-	listint_t *temp;
-	int head_data;
+	size_t nodenum = 0;
 
-	if (!head || !*head)
-		return (0);
+	while (h)
+	{
+		printf("%d\n", h->n);
+		nodenum++;
+		h = h->next;
+	}
 
-	head_data = (*head)->n;
-	temp = *head;
-	*head = (*head)->next;
-	free(temp);
-
-	return (head_data);
+	return (nodenum);
 }
